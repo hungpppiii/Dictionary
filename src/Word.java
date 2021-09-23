@@ -1,8 +1,7 @@
 public class Word {
     private String word_target;
     private String word_explain;
-    String abc;
-
+    
     /**
      * Constructor.
      * @param word_target

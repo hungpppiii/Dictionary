@@ -6,10 +6,10 @@ public class DictionaryManagement {
         public void insertFromCommandline() {
                Scanner sc = new Scanner(System.in);
                Word new_word = new Word();
-               System.out.print("Thêm từ  tiếng anh : ");
+               System.out.print("Nhap tu tieng anh : ");
                String eng = sc.nextLine();
                new_word.setWordTarget(eng);
-               System.out.print("Thêm ý nghĩa của từ: ");
+               System.out.print("Them y nghia cua tu: ");
                String vn = sc.nextLine();
                new_word.setWordExplain(vn);
                Dictionary dict = new Dictionary();

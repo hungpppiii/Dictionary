@@ -2,15 +2,15 @@ package Dict;
 
 public class DictionaryCommandline {
     public void showAllWord() {
-            Dictionary dict = new Dictionary();
-            for (int i=0; i<dict.wordss.size(); i++) {
-                System.out.println(dict.wordss.get(i).getWord_target() + "     " + dict.wordss.get(i).getWord_explain());
-            }
+            final Dictionary dict = new Dictionary();
+        for (int i = 0; i < dict.words.size(); i++) {
+            System.out.println(dict.words.get(i).getWordTarget() + "     " + dict.words.get(i).getWordExplain());
+        }
     }
 
     public void dictionaryBasic() {
-        DictionaryCommandline dict = new DictionaryCommandline();
-        DictionaryManagerment dictm = new DictionaryManagerment();
+        final DictionaryCommandline dict = new DictionaryCommandline();
+        final DictionaryManagerment dictm = new DictionaryManagerment();
         dictm.insertFromCommandline();
         dict.showAllWord();
     }

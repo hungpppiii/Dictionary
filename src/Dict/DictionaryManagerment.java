@@ -8,12 +8,12 @@ public class DictionaryManagerment {
                Word new_word = new Word();
                System.out.print("Thêm từ  tiếng anh : ");
                String eng = sc.nextLine();
-               new_word.setWord_target(eng);
+               new_word.setWordTarget(eng);
                System.out.print("Thêm ý nghĩa của từ: ");
                String vn = sc.nextLine();
-               new_word.setWord_explain(vn);
+               new_word.setWordExplain(vn);
                Dictionary dict = new Dictionary();
-               dict.wordss.add(new_word);
+               dict.words.add(new_word);
         }
 
 }

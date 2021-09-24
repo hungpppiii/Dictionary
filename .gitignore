@@ -2,3 +2,9 @@
 settings.json
 .json
 .idea
+src/Dict/DictionaryManagement.class
+src/Dict/DictionaryCommandline.class
+src/Dict/Dictionary.class
+src/Dict/Word.class
+src/Dict/Main.class
+.gitignore

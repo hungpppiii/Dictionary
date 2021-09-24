@@ -2,7 +2,7 @@ package Dict;
 
 import java.util.Scanner;
 
-public class DictionaryManagerment {
+public class DictionaryManagement {
         public void insertFromCommandline() {
                Scanner sc = new Scanner(System.in);
                Word new_word = new Word();

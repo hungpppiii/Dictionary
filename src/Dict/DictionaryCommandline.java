@@ -10,7 +10,7 @@ public class DictionaryCommandline {
 
     public void dictionaryBasic() {
         final DictionaryCommandline dict = new DictionaryCommandline();
-        final DictionaryManagerment dictm = new DictionaryManagerment();
+        final DictionaryManagement dictm = new DictionaryManagement();
         dictm.insertFromCommandline();
         dict.showAllWord();
     }

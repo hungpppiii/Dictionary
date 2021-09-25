@@ -1,4 +1,4 @@
-package Dict;
+package dict;
 
 public class Word {
      private String word_target;

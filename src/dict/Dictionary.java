@@ -1,4 +1,4 @@
-package Dict;
+package dict;
 
 import java.util.ArrayList;
 

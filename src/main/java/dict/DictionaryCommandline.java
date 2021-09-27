@@ -1,6 +1,8 @@
 package dict;
 
-import java.util.Scanner;
+import java.io.File;
+import java.io.*;
+import java.util.*;
 
 public class DictionaryCommandline {
 
@@ -19,8 +21,9 @@ public class DictionaryCommandline {
         }
     }
 
-    public void dictionaryBasic() {  
-        int value; 
+    public void dictionaryBasic() throws FileNotFoundException {
+        int value;
+        dictManagement.insertFromFile();
         while (true) {    
             System.out.println("\t1.nhap tu moi");
             System.out.println("\t2.danh sach cac tu");

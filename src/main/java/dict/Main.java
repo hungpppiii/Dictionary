@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryCommandline dictCommandline = new DictionaryCommandline();
+        DictionaryManagement dictionaryManagement = new DictionaryManagement();
         Scanner sc = new Scanner(System.in);
         int value;
         while(true) {
@@ -15,7 +16,7 @@ public class Main {
             System.out.print("nhap lua chon: ");
             value = sc.nextInt();
             if (value == 1) {
-               dictCommandline.dictionaryBasic();
+               dictionaryManagement.dictionaryAdvanced();
             } else {
                 break;
             }

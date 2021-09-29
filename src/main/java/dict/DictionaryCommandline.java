@@ -40,5 +40,32 @@ public class DictionaryCommandline {
         }
     }
 
+    public void dictionaryAdvanced() {
+        String value;
+        Scanner sc = new Scanner(System.in);
+        DictionaryManagement dictManagement = new DictionaryManagement();
+        dictManagement.insertFromFile();
+        DictionaryCommandline dict = new DictionaryCommandline();
+        while(true) {
+            System.out.println("1. Them tu");
+            System.out.println("2. Danh sach cac tu");
+            System.out.println("3. Tim kiem tu");
+            System.out.println("4. exit");
+            System.out.print("5. Nhap lua chon: ");
+            value = sc.nextLine();
+            if (value.equals("1")) {
+                dictManagement.insertFromCommandline();
+            }
+            else if (value.equals("2")) {
+               showAllWord();
+            }else if(value.equals("3")){
+                dictManagement.dictionaryLookup();
+            }
+            else {
+                break;
+            }
+        }
+    }
+
 
 }

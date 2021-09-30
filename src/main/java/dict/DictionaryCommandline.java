@@ -21,7 +21,7 @@ public class DictionaryCommandline {
         }
     }
 
-    public void dictionaryBasic() throws FileNotFoundException {
+    public void dictionaryBasic() {
         int value;
         dictManagement.insertFromFile();
         while (true) {    
@@ -59,7 +59,11 @@ public class DictionaryCommandline {
             else if (value.equals("2")) {
                showAllWord();
             }else if(value.equals("3")){
-                dictManagement.dictionaryLookup();
+                int index = dictManagement.dictionaryLookup();
+                System.out.println(index+1+"  "+Dictionary.words.get(index).getWordTarget()+" "+Dictionary.words.get(index).getWordExplain());
+                if (index<0) {
+                    System.out.println("Khong tim thay tu nao!");
+                }
             }
             else {
                 break;

@@ -48,19 +48,17 @@ public class DictionaryManagement {
 
         }
 
-        public void dictionaryLookup() {
+        public int dictionaryLookup() {
             Scanner sc = new Scanner(System.in);
             System.out.print("Nhap tu tim kiem: ");
             boolean ss = false;
             String find = sc.nextLine();
             for (int i=0; i<Dictionary.words.size(); i++) {
                 if (Dictionary.words.get(i).getWordTarget().equals(find)) {
-                    System.out.println(Dictionary.words.get(i).getWordTarget()+"    "+Dictionary.words.get(i).getWordExplain());
+                    return i;
                 }
             }
-            if (ss == false) {
-                System.out.println("Khong tim thay");
-            }
+            return -1;
         }
 
 

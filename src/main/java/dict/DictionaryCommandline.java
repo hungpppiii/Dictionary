@@ -1,6 +1,9 @@
 package dict;
 
 import java.util.Scanner;
+import java.io.File;
+import java.io.*;
+import java.util.*;
 
 public class DictionaryCommandline {
 
@@ -45,6 +48,39 @@ public class DictionaryCommandline {
             } 
             else {
                 System.out.println("!!! nhap sai lua chon !!!");
+            }
+        }
+    }
+
+    public void dictionaryAdvanced() {
+        String value;
+        Scanner sc = new Scanner(System.in);
+        DictionaryManagement dictManagement = new DictionaryManagement();
+        dictManagement.insertFromFile();
+        DictionaryCommandline dict = new DictionaryCommandline();
+        while(true) {
+            System.out.println("1. Them tu");
+            System.out.println("2. Danh sach cac tu");
+            System.out.println("3. Tim kiem tu");
+            System.out.println("4. exit");
+            System.out.print("5. Nhap lua chon: ");
+            value = sc.nextLine();
+            if (value.equals("1")) {
+                dictManagement.insertFromCommandline();
+            }
+            else if (value.equals("2")) {
+               showAllWord();
+            } else if (value.equals("3")) {
+                System.out.println("nhap tu can tim: ");
+                String word = sc.nextLine();
+                int index = dictManagement.dictionaryLookup(word);
+                System.out.println(index + 1 + "  " + Dictionary.words.get(index).getWordTarget()+ "    " + Dictionary.words.get(index).getWordExplain());
+                if (index<0) {
+                    System.out.println("Khong tim thay tu nao!");
+                }
+            }
+            else {
+                break;
             }
         }
     }

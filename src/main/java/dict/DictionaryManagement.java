@@ -27,6 +27,7 @@ public class DictionaryManagement {
                Dictionary.words.add(new_word);
         }
         
+        // tìm kiếm từ
         public int dictionaryLookup(String word) {
                 for (int i = 0; i < Dictionary.words.size(); i++) {
                         if(Dictionary.words.get(i).getWordTarget().equals(word)) {
@@ -36,6 +37,7 @@ public class DictionaryManagement {
                 return -1;
         }
         
+        // thêm dữ liệu (thêm từ mới hoặc thêm nghĩa từ "chèn sau nghĩa cũ")
         public void addData() {
                 System.out.println("\t\t1.them tu moi: ");
                 System.out.println("\t\t2.them nghia moi cua tu cu: ");
@@ -60,6 +62,7 @@ public class DictionaryManagement {
 
         }
 
+        //xóa dữ liệu (xóa từ)
         public void deleteData() {
                 System.out.print("nhap tu tieng anh can xoa: ");
                 String del_word = sc.nextLine();
@@ -69,6 +72,7 @@ public class DictionaryManagement {
                 }
         }
 
+        //sửa nghĩa và sửa từ
         public void repairData() {
                 System.out.print("nhap tu tieng anh can sua: ");
                 String repair_word = sc.nextLine();
@@ -81,6 +85,7 @@ public class DictionaryManagement {
                 Dictionary.words.get(index).setWordExplain(word_explain);
         }
 
+        //tìm từ dựa trên những chữ cái bắt đầu
         public void findWord(String word) {
                 System.out.println("tu can tim: ");
                 boolean check = true;
@@ -97,6 +102,7 @@ public class DictionaryManagement {
                 }
         }
 
+        //xuất danh sách từ điển ra file dictionary.txt
         public void dictionaryExportToFile() {
                 BufferedWriter bufferWriter = null;
                 
@@ -122,4 +128,30 @@ public class DictionaryManagement {
                         }
                 }
         }
+
+        //ghi từ điển từ file
+        public void insertFromFile() {
+           try {
+               FileReader fr = new FileReader(linkfile);
+               BufferedReader br = new BufferedReader(fr);
+               String line  = "";
+               while(true) {
+                   line = br.readLine();
+                   if (line == null) {
+                       break;
+                   }
+                   String txt[] = line.split("\t");
+                   String eng = txt[0];
+                   String vn = txt[1];
+                   Word Wordss = new Word();
+                   Wordss.setWordTarget(eng);
+                   Wordss.setWordExplain(vn);
+                   Dictionary.words.add(Wordss);
+               }
+           } catch(IOException e){
+           }
+
+        }
+
+
 }

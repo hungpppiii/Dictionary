@@ -1,7 +1,6 @@
 package dict;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import java.io.*;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -132,7 +131,7 @@ public class DictionaryManagement {
         //ghi từ điển từ file
         public void insertFromFile() {
            try {
-               FileReader fr = new FileReader(linkfile);
+               FileReader fr = new FileReader(linkFile);
                BufferedReader br = new BufferedReader(fr);
                String line  = "";
                while(true) {

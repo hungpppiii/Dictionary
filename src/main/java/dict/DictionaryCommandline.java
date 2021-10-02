@@ -1,15 +1,12 @@
 package dict;
 
 import java.util.Scanner;
-import java.io.File;
-import java.io.*;
-import java.util.*;
 
 public class DictionaryCommandline {
 
-    //private Dictionary dict = new Dictionary();
     private DictionaryManagement dictManagement = new DictionaryManagement();
     private Scanner sc = new Scanner(System.in);
+
     /**
      * Show all word.
      */
@@ -22,11 +19,12 @@ public class DictionaryCommandline {
         }
     }
 
+    //menu thư viện
     public void dictionaryBasic() {  
         String value; 
         while (true) {    
             System.out.println("\t1.nhap tu moi");
-            System.out.println("\t2.danh sach cac tu//\n\t4.del\n\t5.repair\n\t6.add");
+            System.out.println("\t2.danh sach cac tu\n\t4.del\n\t5.repair\n\t6.add");
             System.out.println("\t3.exit");
             System.out.print("nhap lua chon: ");
             value = sc.nextLine();
@@ -52,6 +50,7 @@ public class DictionaryCommandline {
         }
     }
 
+    //menu2
     public void dictionaryAdvanced() {
         String value;
         Scanner sc = new Scanner(System.in);

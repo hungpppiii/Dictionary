@@ -10,15 +10,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String value;
         while(true) {
-            System.out.println("\t1.vao dictionary");
-            System.out.println("\t2.exit");
+            System.out.println("\t1.vao dictionaryBasic");
+            System.out.println("\t2.vao dictionaryAdvanced");
+            System.out.println("\t3.exit");
             System.out.print("nhap lua chon: ");
             value = sc.nextLine();
             if (value.equals("1")) {
                 dictCommandline.dictionaryBasic();
             } else if (value.equals("2")) {
-                  break;
-            } 
+                dictCommandline.dictionaryAdvanced();
+            } else if (value.equals("3")) {
+                break;
+            }
         }
     }
 }

@@ -53,10 +53,7 @@ public class DictionaryCommandline {
     //menu2
     public void dictionaryAdvanced() {
         String value;
-        Scanner sc = new Scanner(System.in);
-        DictionaryManagement dictManagement = new DictionaryManagement();
         dictManagement.insertFromFile();
-        DictionaryCommandline dict = new DictionaryCommandline();
         while(true) {
             System.out.println("1. Them tu");
             System.out.println("2. Danh sach cac tu");

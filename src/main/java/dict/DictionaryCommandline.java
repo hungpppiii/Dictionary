@@ -84,10 +84,10 @@ public class DictionaryCommandline {
                 System.out.println("nhap tu can tim: ");
                 String word = sc.nextLine();
                 int index = dictManagement.dictionaryLookup(word);
-                System.out.println(index + Dictionary.words.get(index).getWordTarget() +" "+Dictionary.words.get(index).getWordExplain());
-                VoiceManager.voice(Dictionary.words.get(index).getWordTarget());
-                if (index == Dictionary.words.size()) {
-                    System.out.println("Khong tim thay tu can tim");
+                if (index>=0) {
+                    System.out.println(index + "    "+Dictionary.words.get(index).getWordTarget()+"     "+Dictionary.words.get(index).getWordExplain());
+                } else {
+                    System.out.println("Khong tim thay tu");
                 }
             } else if(value.equals("4")) {
                 int index = dictManagement.SeachVieNam();

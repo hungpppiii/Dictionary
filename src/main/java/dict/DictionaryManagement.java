@@ -27,14 +27,13 @@ public class DictionaryManagement {
         
         // tìm kiếm từ
         public int dictionaryLookup(String word) {
-               for (int i=0; i<Dictionary.words.size(); i++) {
-                       if (Dictionary.words.get(i).getWordTarget() == word) {
-                               return i;
-                       }
-               }
-               return 0         ;
+                for (int i = 0; i < Dictionary.words.size(); i++) {
+                        if(Dictionary.words.get(i).getWordTarget().equals(word)) {
+                                return i;
+                        }
+                }
+                return -1;
         }
-        
         // thêm dữ liệu (thêm từ mới hoặc thêm nghĩa từ "chèn sau nghĩa cũ")
         public void addData() {
                 System.out.println("\t\t1.them tu moi: ");

@@ -1,8 +1,7 @@
 package dict;
 
 import java.io.*;
-import java.io.IOException;
-import java.util.Scanner;
+import java.util.*;
 
 public class DictionaryManagement {
 
@@ -28,12 +27,12 @@ public class DictionaryManagement {
         
         // tìm kiếm từ
         public int dictionaryLookup(String word) {
-                for (int i = 0; i < Dictionary.words.size(); i++) {
-                        if(Dictionary.words.get(i).getWordTarget().equals(word)) {
-                                return i;
-                        }
-                }
-                return -1;
+               for (int i=0; i<Dictionary.words.size(); i++) {
+                       if (Dictionary.words.get(i).getWordTarget() == word) {
+                               return i;
+                       }
+               }
+               return 0         ;
         }
         
         // thêm dữ liệu (thêm từ mới hoặc thêm nghĩa từ "chèn sau nghĩa cũ")
@@ -149,8 +148,24 @@ public class DictionaryManagement {
                }
            } catch(IOException e){
            }
-
         }
 
+        public int SeachVieNam() {
+                Scanner sc = new Scanner(System.in);
+                String word = sc.nextLine();
+                boolean check = false;
+                int index = 0;
+                for (int i=0; i < Dictionary.words.size(); i++) {
+                        if (word.equals(Dictionary.words.get(i).getWordExplain())) {
+                                index = i;
+                                check = true;
+                        }
+                }
+                if (check == false) {
+                        return 0;
+                } else {
+                       return index;
+                }
+        }
 
 }

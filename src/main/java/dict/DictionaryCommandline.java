@@ -6,6 +6,7 @@ public class DictionaryCommandline {
 
     private DictionaryManagement dictManagement = new DictionaryManagement();
     private Scanner sc = new Scanner(System.in);
+    VoiceManager voiceManager = new VoiceManager();
 
     /**
      * Show all word.
@@ -26,6 +27,8 @@ public class DictionaryCommandline {
             System.out.println("\t1.nhap tu moi");
             System.out.println("\t2.danh sach cac tu\n\t4.del\n\t5.repair\n\t6.add");
             System.out.println("\t3.exit");
+            System.out.println("8. SearchWord");
+            dictManagement.insertFromFile();
             System.out.print("nhap lua chon: ");
             value = sc.nextLine();
             if (value.equals("1")) {
@@ -43,7 +46,14 @@ public class DictionaryCommandline {
                 dictManagement.addData();
             } else if (value.equals("7")) {
                 dictManagement.dictionaryExportToFile();
-            } 
+            } else if(value.equals("8")) {
+                int index = dictManagement.SeachVieNam();
+                System.out.println(Dictionary.words.get(index).getWordTarget()+"    "+Dictionary.words.get(index).getWordExplain());
+                VoiceManager.voice(Dictionary.words.get(index).getWordTarget());
+                if (index == 0) {
+                    System.out.println("Khong tim thay tu can tim");
+                }
+            }
             else {
                 System.out.println("!!! nhap sai lua chon !!!");
             }
@@ -61,8 +71,9 @@ public class DictionaryCommandline {
             System.out.println("1. Them tu");
             System.out.println("2. Danh sach cac tu");
             System.out.println("3. Tim kiem tu");
-            System.out.println("4. exit");
-            System.out.print("5. Nhap lua chon: ");
+            System.out.println("4. Tim tu tieng viet");
+            System.out.println("5. exit");
+            System.out.print("6. Nhap lua chon: ");
             value = sc.nextLine();
             if (value.equals("1")) {
                 dictManagement.insertFromCommandline();
@@ -73,9 +84,17 @@ public class DictionaryCommandline {
                 System.out.println("nhap tu can tim: ");
                 String word = sc.nextLine();
                 int index = dictManagement.dictionaryLookup(word);
-                System.out.println(index + 1 + "  " + Dictionary.words.get(index).getWordTarget()+ "    " + Dictionary.words.get(index).getWordExplain());
-                if (index<0) {
-                    System.out.println("Khong tim thay tu nao!");
+                System.out.println(index + Dictionary.words.get(index).getWordTarget() +" "+Dictionary.words.get(index).getWordExplain());
+                VoiceManager.voice(Dictionary.words.get(index).getWordTarget());
+                if (index == Dictionary.words.size()) {
+                    System.out.println("Khong tim thay tu can tim");
+                }
+            } else if(value.equals("4")) {
+                int index = dictManagement.SeachVieNam();
+                System.out.println(Dictionary.words.get(index).getWordTarget()+ "   "+Dictionary.words.get(index).getWordExplain());
+                VoiceManager.voice(Dictionary.words.get(index).getWordExplain());
+                if (index == 0) {
+                    System.out.println("Khong tim thay tu can tim");
                 }
             }
             else {

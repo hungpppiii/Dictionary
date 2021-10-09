@@ -149,22 +149,12 @@ public class DictionaryManagement {
            }
         }
 
-        public int SeachVieNam() {
-                Scanner sc = new Scanner(System.in);
-                String word = sc.nextLine();
-                boolean check = false;
-                int index = 0;
-                for (int i=0; i < Dictionary.words.size(); i++) {
-                        if (word.equals(Dictionary.words.get(i).getWordExplain())) {
-                                index = i;
-                                check = true;
+        public int searchV(String word) {
+                for (int i = 0; i < Dictionary.words.size(); i++) {
+                        if(Dictionary.words.get(i).getWordExplain().equals(word)) {
+                                return i;
                         }
                 }
-                if (check == false) {
-                        return 0;
-                } else {
-                       return index;
-                }
+                return -1;
         }
-
 }

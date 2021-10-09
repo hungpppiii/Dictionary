@@ -47,7 +47,8 @@ public class DictionaryCommandline {
             } else if (value.equals("7")) {
                 dictManagement.dictionaryExportToFile();
             } else if(value.equals("8")) {
-                int index = dictManagement.SeachVieNam();
+                String word = sc.nextLine();
+                int index = dictManagement.searchV(word);
                 System.out.println(Dictionary.words.get(index).getWordTarget()+"    "+Dictionary.words.get(index).getWordExplain());
                 VoiceManager.voice(Dictionary.words.get(index).getWordTarget());
                 if (index == 0) {
@@ -81,21 +82,26 @@ public class DictionaryCommandline {
             else if (value.equals("2")) {
                showAllWord();
             } else if (value.equals("3")) {
-                System.out.println("nhap tu can tim: ");
+                System.out.print("nhap tu can tim: ");
                 String word = sc.nextLine();
                 int index = dictManagement.dictionaryLookup(word);
                 if (index>=0) {
                     System.out.println(index + "    "+Dictionary.words.get(index).getWordTarget()+"     "+Dictionary.words.get(index).getWordExplain());
+                    VoiceManager.voice(Dictionary.words.get(index).getWordTarget());
                 } else {
                     System.out.println("Khong tim thay tu");
                 }
             } else if(value.equals("4")) {
-                int index = dictManagement.SeachVieNam();
-                System.out.println(Dictionary.words.get(index).getWordTarget()+ "   "+Dictionary.words.get(index).getWordExplain());
-                VoiceManager.voice(Dictionary.words.get(index).getWordExplain());
-                if (index == 0) {
-                    System.out.println("Khong tim thay tu can tim");
+                System.out.print("Nhap tu can tim: ");
+                String word = sc.nextLine();
+                int index = dictManagement.searchV(word);
+                if (index>=0) {
+                    System.out.println(index+"  "+Dictionary.words.get(index).getWordTarget()+" "+Dictionary.words.get(index).getWordExplain());
+                    VoiceManager.voice(Dictionary.words.get(index).getWordExplain());
+                }else {
+                    System.out.println("Khong tim thay tu");
                 }
+
             }
             else {
                 break;

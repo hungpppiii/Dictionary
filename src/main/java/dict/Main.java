@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        
+        //test translate
+        Translate trans = new Translate();
+        System.out.println(trans.translate("If I pass a string (either in English or Arabic) as an input"));
+        //
         DictionaryCommandline dictCommandline = new DictionaryCommandline();
         Scanner sc = new Scanner(System.in);
         String value;

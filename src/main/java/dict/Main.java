@@ -13,10 +13,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String value;
         while(true) {
-            System.out.println("\t1.vao dictionaryBasic");
-            System.out.println("\t2.vao dictionaryAdvanced");
+            System.out.println("\t1.vào dictionaryBasic");
+            System.out.println("\t2.vào dictionaryAdvanced");
             System.out.println("\t3.exit");
-            System.out.print("nhap lua chon: ");
+            System.out.print("nhập lựa chọn: ");
             value = sc.nextLine();
             if (value.equals("1")) {
                 dictCommandline.dictionaryBasic();

@@ -31,9 +31,6 @@ public class Translate {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            // if (response != null) {
-            //     return response.toString();
-            // }
             if (in != null) {
                 try {
                     in.close();

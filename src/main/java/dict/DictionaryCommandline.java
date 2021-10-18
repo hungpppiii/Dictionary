@@ -16,6 +16,7 @@ public class DictionaryCommandline {
         int count = 1;
         for (Word i : Dictionary.words) {
             System.out.print((count++) + "\t\t" + i.getWordTarget());
+            System.out.print("\t\t" + i.getWordType());
             System.out.println("\t\t" + i.getWordExplain());
         }
     }
@@ -74,15 +75,14 @@ public class DictionaryCommandline {
             } else if (value.equals("2")) {
                 showAllWord();
             } else if (value.equals("3")) {
-                System.out.println("nhap tu can tim: ");
+                System.out.print("nhap tu can tim: ");
                 String word = sc.nextLine();
                 int index = dictManagement.dictionaryLookup(word);
-                if (index < 0) {
-                    System.out.println("Khong tim thay tu can tim");
-                } else {
-                    System.out.println(index + Dictionary.words.get(index).getWordTarget() + "      "
-                            + Dictionary.words.get(index).getWordExplain());
+                if (index>=0) {
+                    System.out.println(index + "    "+Dictionary.words.get(index).getWordTarget()+" "+Dictionary.words.get(index).getWordType()+" "+Dictionary.words.get(index).getWordExplain());
                     VoiceManager.voice(Dictionary.words.get(index).getWordTarget());
+                } else {
+                    System.out.println("Khong tim thay tu");
                 }
             } else if (value.equals("4")) {
                 break;

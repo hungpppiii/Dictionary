@@ -1,6 +1,6 @@
-abandon	(v)	bỏ, từ bỏ
-ability	(n)	khả năng, năng lực
-able	(adj)	có năng lực, có tài
+abandon (v   bỏ, từ bỏ
+ability (n)   khả năng, năng lực
+able    (adj) có năng lực, có tài
 about	(adv)(prep)	khoảng, về
 above	(adv)	ở trên
 abroad	(adv)	ở, ra nước ngoài, ngoài trời
@@ -129,7 +129,7 @@ attend	(v)	dự, có mặt
 attention	(n)	sự chú ý
 attitude	(n)	thái độ, quan điểm
 attorney	(n)	người được ủy quyền
-attract	(v)	hút, thu hút, hấp dẫn
+attract	(v)	hút; thu hút, hấp dẫn
 attraction	(n)	sự hút, sức hút
 attractive	(adj)	hút, thu hút, có duyên, lôi cuốn
 audience	(n)	thính, khan giả
@@ -325,7 +325,7 @@ cinema	(n)	rạp chiếu bóng
 circle	(n)	đường tròn, hình tròn
 circumstance	(n)	hoàn cảnh, trường hợp, tình huống
 citizen	(n)	người thành thị
-city	(n)	thành phố
+city	(n) thành phố
 civil	(adj)	(thuộc) công dân
 claim	(v)(n)	đòi hỏi, yêu sách; sự đòi hỏi, sự yêu sách, sự thỉnh cầu
 clap	(v)(n)	vỗ, vỗ tay; tiếng nổ, tiếng vỗ tay
@@ -486,7 +486,7 @@ crowd	(n)	đám đông
 crown	(n)	vương miện, vua, ngai vàng; đỉnh cao nhất
 crucial	(adj)	quyết định, cốt yếu, chủ yếu
 cruel	(adj)	độc ác, dữ tợn, tàn nhẫn
-crush	(v)	ép, vắt, đè nát, đè bẹp, người yêu
+crush	(v)	ép, vắt, đè nát, đè bẹp
 cry	(v)(n)	khóc, kêu la; sự khóc, tiếng khóc, sự kêu la
 culture	(n)	văn hóa, sự mở mang, sự giáo dục
 cup	(n)	tách, chén
@@ -701,7 +701,7 @@ educated	(adj)	được giáo dục, được đào tạo
 education	(n)	sự giáo dục, sự rèn luyện (kỹ năng)
 effect	(n)	hiệu ứng, hiệu quả, kết quả
 effective	(adj)	có kết quả, có hiệu lực
-effectively	(adv)	có kết quả, có hiệu lực
+effectively(adv)	có kết quả, có hiệu lực
 efficient	(adj)	có hiệu lực, có hiệu quả
 efficiently	(adv)	có hiệu quả, hiệu nghiệm
 effort	(n)	sự cố gắng, sự nỗ lực
@@ -718,7 +718,7 @@ electronic	(adj)	(thuộc) điện tử
 elegant	(adj)	thanh lịch, tao nhã
 element	(n)	yếu tố, nguyên tố
 elevator	(n)	máy nâng, thang máy
-else	()	khác, nữa; nếu không
+else	khác, nữa; nếu không
 elsewhere	(adv)	ở một nơi nào khác
 embarrass	(v)	lúng túng, làm ngượng nghịu; làm rắc rối, gây khó khăn
 embarrassing	(adj)	làm lúng túng, ngăn trở
@@ -738,13 +738,13 @@ employee	(n)	người lao động, người làm công
 employer	(n)	chủ, người sử dụng lao động
 employment	(n)	sự thuê mướn
 unemployment	(n)	sự thất nghiệp, nạn thất nghiệp
-empty	(adj)(v)	trống, rỗng; đổ, dốc; uống, làm cạn
+empty	(adj)	(v) trống, rỗng; đổ, dốc; uống, làm cạn
 enable	(v)	làm cho có thể, có khả năng; cho phép ai làm gì
-encounter	(v)(n)	chạm chán, bắt gặp; sự chạm trán, sự bắt gặp
+encounter	(v) (n)	chạm chán, bắt gặp; sự chạm trán, sự bắt gặp
 encourage	(v)	động viên, ủng hộ, giúp đỡ, làm can đảm, mạnh dạn
 encouragement	(n)	niềm cổ vũ, động viên, khuyến khích, sự làm can đảm
 end	(n) (v)	giới hạn, sự kết thúc; kết thúc, chấm dứt
-in the end	()	cuối cùng, về sau
+in the end	cuối cùng, về sau
 ending	(n)	sự kết thúc, sự chấm dứt; phần cuối, kết cục
 enemy	(n)	kẻ thù, quân địch
 energy	(n)	năng lượng, nghị lực, sinh lực
@@ -809,7 +809,7 @@ except	(prep)(conj)	trừ ra, không kể; trừ phi
 exception	(n)	sự trừ ra, sự loại ra
 exchange	(v)(n)	trao đổi; sự trao đổi
 in exchange for	()	trong việc trao đổi về
-excite	(v)	kích thích, kích động
+excite	(v) kích thích, kích động
 exciting	(adj)	hứng thú, thú vị
 excited	(adj)	bị kích thích, bị kích động
 excitement	(n)	sự kích thích, sự kích động
@@ -1157,7 +1157,7 @@ hole	(n)	lỗ, lỗ trống; hang
 hollow	(adj)	rỗng, trống rỗng
 holy	(adj)	linh thiêng; sùng đạo
 honest	(adj)	lương thiện, trung thực, chân thật
-honestly	(adj)	lương thiện, trung thực, chân thật
+honestly	(adj) lương thiện, trung thực, chân thật
 honour	(n)	danh dự, thanh danh, lòng kính trọng
 in honour of	(v)	để tỏ lòng tôn kính, trân trọng đối với
 hook	(n)	cái móc; bản lề; lưỡi câu
@@ -1171,7 +1171,7 @@ housing	(n)	nơi ăn chốn ở
 household	(n) (adj)	hộ, gia đình; (thuộc) gia đình
 huge	(adj)	to lớn, khổng lồ
 human	(adj) (n)	(thuộc) con người, loài người
-humorous	(adj)	hài hước, hóm hỉnh
+humorous	(adj) hài hước, hóm hỉnh
 humour	(n)	sự hài hước, sự hóm hỉnh
 hungry	(adj)	đói
 hunt	(v)	săn, đi săn
@@ -1699,7 +1699,7 @@ opposed to	()	chống lại, phản đối
 opposite	(adj) (adv) (n)prep.	đối nhau, ngược nhau; trước mặt, đối diện; điều trái ngược
 opposition	(n)	sự đối lập, sự đối nhau; sự chống lại, sự phản đối;phe đối lập
 option	(n)	sự lựa chọn
-orange	(n) (adj)	quả cam; có màu da cam, màu cam
+orange	(n) (adj)	quả cam; có màu da cam
 order	(n) (v)	thứ, bậc; ra lệnh
 in order to	()	hợp lệ
 ordinary	(adj)	thường, thông thường
@@ -1945,7 +1945,7 @@ producer	(n)	nhà sản xuất
 product	(n)	sản phẩm
 production	(n)	sự sản xuất, chế tạo
 profession	(n)	nghề, nghề nghiệp
-professional	(adj)(n)	(thuộc) nghề, nghề nghiệp; chuyên nghiệp
+professional	(adj)(n) (thuộc)	nghề, nghề nghiệp; chuyên nghiệp
 professor	(n)	giáo sư, giảng viên
 profit	(n)	thuận lợi, lợi ích, lợi nhuận
 program	(n) (v)	chương trình; lên chương trình
@@ -1968,7 +1968,7 @@ proposal	(n)	sự đề nghị, đề xuất
 propose	(v)	đề nghị, đề xuất, đưa ra
 prospect	(n)	viễn cảnh, toàn cảnh; triển vọng, mong chờ
 protect	(v)	bảo vệ, che chở
-protection	(n)	sự bảo vệ, sự che chở
+protection	(n) sự bảo vệ, sự che chở
 protest	(n) (v)	sự phản đối, sự phản kháng; phản đối, phản kháng
 proud	(adj)	tự hào, kiêu hãnh
 proudly	(adv)	một cách tự hào, một cách hãnh diện
@@ -2008,13 +2008,13 @@ quantity	(n)	lượng, số lượng
 quarter	(n)	1/4, 15 phút
 question	(n) (v)	câu hỏi; hỏi, chất vấn
 quick	(adj)	nhanh
-quickly	(adv)	nhanh
+quickly	(adv) nhanh
 quiet	(adj)	lặng, yên lặng, yên tĩnh
 quietly	(adv)	lặng, yên lặng, yên tĩnh
 quit	(v)	thoát, thoát ra
 quite	(adv)	hoàn toàn, hầu hết
 quote	(v)	trích dẫn
-race	(n) (v)	loài, chủng, giống; cuộc đua; đua
+race	(n) (v) loài, chủng, giống; cuộc đua; đua
 racing	(n)	cuộc đua
 rail	(n)	đường ray
 railway	(n)	đường sắt
@@ -2033,7 +2033,7 @@ reach	(v)	đến, đi đến, tới
 react	(v)	tác động trở lại, phản ứng
 reaction	(n)	sự phản ứng; sự phản tác dụng
 reading	(n)	sự đọc
-reader	(n)	người đọc, độc giả
+reader	(n) 	gười đọc, độc giả
 ready	(adj)	sẵn sàng
 real	(adj)	thực, thực tế, có thật
 really	(adv)	thực, thực ra, thực sự
@@ -2717,7 +2717,7 @@ totally	(adv)	hoàn toàn
 touch	(v) (n)	sờ, mó, tiếp xúc; sự sờ, sự mó, sự tiếp xúc
 tough	(adj)	chắc, bền, dai
 tour	(n) (v)	cuộc đi du lịch, cuộc đi dạo, chuyến du lịch; đi du lịch
-tourist	(n)	khách du lịch
+tourist	(n) khách du lịch
 towards	(prep)	theo hướng, về hướng
 towel	(n)	khăn tắm, khăn lau
 tower	(n)	tháp
@@ -2915,7 +2915,7 @@ way	(n)	đường, đường đi
 weak	(adj)	yếu, yếu ớt
 weakness	(n)	tình trạng yếu đuối, yếu ớt
 wealth	(n)	sự giàu có, sự giàu sang
-weapon	(n)	vũ khí
+weapon	(n) vũ khí
 wear	(v)	mặc, mang, đeo
 weather	(n)	thời tiết
 web	(n)	mạng, lưới
@@ -2974,3 +2974,4 @@ withdraw	(v)	rút, rút khỏi, rút lui
 within	(prep)	trong vong thời gian, trong khoảng thời gian
 without	(prep)	không, không có
 witness	(n) (v)	sự làm chứng, bằng chứng; chứng kiến, làm chứng
+

@@ -30,7 +30,7 @@ public class DictionaryManagement {
         // tìm kiếm từ
         public int dictionaryLookup(String word) {
                 for (int i = 0; i < Dictionary.words.size(); i++) {
-                        if (Dictionary.words.get(i).getWordTarget().equals(word)) {
+                        if(Dictionary.words.get(i).getWordTarget().equals(word)) {
                                 return i;
                         }
                 }
@@ -147,10 +147,9 @@ public class DictionaryManagement {
                                 }
                                 String txt[] = line.split("\t");
                                 String eng = txt[0];
-                                String vn = txt[1];
-                                Word Wordss = new Word();
-                                Wordss.setWordTarget(eng);
-                                Wordss.setWordExplain(vn);
+                                String tp = txt[1];
+                                String vn = txt[2];
+                                Word Wordss = new Word(eng, vn, tp);
                                 Dictionary.words.add(Wordss);
                         }
                 } catch (IOException e) {

@@ -8,7 +8,7 @@ public class DictionaryManagement {
         // private DictionaryManagement dictonaryManagement = new
         // DictionaryManagement();
         private Scanner sc = new Scanner(System.in);
-        private final String linkFile = "dictionaries.txt";
+        private final String linkFile = "a1.txt";
 
         /**
          * add word from commnadline.
@@ -147,9 +147,8 @@ public class DictionaryManagement {
                                 }
                                 String txt[] = line.split("\t");
                                 String eng = txt[0];
-                                String tp = txt[1];
-                                String vn = txt[2];
-                                Word Wordss = new Word(eng, vn, tp);
+                                String vn = txt[1];
+                                Word Wordss = new Word(eng, vn);
                                 Dictionary.words.add(Wordss);
                         }
                 } catch (IOException e) {

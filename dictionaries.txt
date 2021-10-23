@@ -1,34 +1,35 @@
-pink	mau hong
-dot	dau cham
-do	lam viec
-brink	mang
-sun	mat troi
-summer	mua he
-pig	con lon
-cloud	dam may
-spring	mua xuan
-red	mau do
 apple	qua tao
-ball	qua bong
-computer	may tinh
-gray	mau xam
 array	mang
-grass	coc
-cat	con meo
-wedding	dam cuoi
-man	dan ong
-sunny	nang
-write	viet
-banana	chuoi
-green	mau xanh la
-read	doc
-break	lam vo
-bold	dam
-call	goi
-orange	mau da cam
-doctor	bac si
-dictionary	tu dien
-blue	mau xanh da troi
-earth	trai dat
 autumn	mua thu
+ball	qua bong
+banana	chuoi
+blue	mau xanh da troi
+bold	dam
+break	lam vo
+brink	mang
+call	goi
+cat	con meo
+cloud	dam may
+computer	may tinh
+dictionary	tu dien
+do	lam viec
+doctor	bac si
 dog	con cho
+dot	dau cham
+earth	trai dat
+grass	coc
+gray	mau xam
+green	mau xanh la
+man	dan ong
+orange	mau da cam
+pig	con lon
+pink	mau hong
+read	doc
+red	mau do
+spring	mua xuan
+summer	mua he
+sun	mat troi
+sunny	nang
+turtle	con rua
+wedding	dam cuoi
+write	viet

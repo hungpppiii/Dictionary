@@ -41,8 +41,7 @@ public class VoiceManager {
             synthesizer.waitEngineState(
                     Synthesizer.QUEUE_EMPTY);
 
-            // Deallocate the Synthesizer.
-            synthesizer.deallocate();
+            // Deallocate the Synthesizer;
         }
 
         catch (Exception e) {

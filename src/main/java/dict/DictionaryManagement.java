@@ -6,7 +6,7 @@ import java.util.*;
 public class DictionaryManagement {
 
         private Scanner sc = new Scanner(System.in);
-        private final String linkFile = "dictionaries.txt";
+        private final String linkFile = "a1.txt";
 
         /**
          * add word from commnadline.

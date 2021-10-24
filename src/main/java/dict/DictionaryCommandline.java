@@ -9,6 +9,7 @@ public class DictionaryCommandline {
     VoiceManager voiceManager = new VoiceManager();
     Translate tran = new Translate();
 
+
     /**
      * Show all word.
      */
@@ -80,9 +81,10 @@ public class DictionaryCommandline {
                 System.out.print("nhap doan can tim: ");
                 String word = sc.nextLine();
                 System.out.println(tran.translate("en", "vi", word));
+                VoiceManager.voice(word);
 
             } else if (value.equals("4")) {
-                System.out.print("Nhap tu can tim:");
+                System.out.print("Nhap tu can tim: ");
                 String word = sc.nextLine();
                 int index = dictManagement.dictionaryLookup(word);
                 if (index>=0) {
@@ -95,6 +97,7 @@ public class DictionaryCommandline {
                 System.out.print("Nhap tu can tim: ");
                 String word = sc.nextLine();
                 System.out.println(tran.translate("vi", "en", word));
+                VoiceManager.voice(word);
             }
             else if(value.equals("6")){
                 break;

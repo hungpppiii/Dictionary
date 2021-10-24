@@ -8,7 +8,7 @@ public class DictionaryManagement {
         // private DictionaryManagement dictonaryManagement = new
         // DictionaryManagement();
         private Scanner sc = new Scanner(System.in);
-        private final String linkFile = "a1.txt";
+        private final String linkFile = "dictionary.txt";
 
         /**
          * add word from commnadline.

@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+apple	qua tao
+array	mang
+autumn	mua thu
+ball	qua bong
+banana	chuoi
+blue	mau xanh da troi
+bold	dam
+break	lam vo
+brink	mang
+call	goi
+cat	con meo
+cloud	dam may
+computer	may tinh
+dictionary	tu dien
+do	lam viec
+doctor	bac si
+dog	con cho
+dot	dau cham
+earth	trai dat
+grass	coc
+gray	mau xam
+green	mau xanh la
+man	dan ong
+orange	mau da cam
+pig	con lon
+pink	mau hong
+read	doc
+red	mau do
+spring	mua xuan
+summer	mua he
+sun	mat troi
+sunny	nang
+turtle	con rua
+wedding	dam cuoi
+write	viet
+=======
 abandon	(v)	bỏ, từ bỏ
 ability	(n)	khả năng, năng lực
 able	(adj)	có năng lực, có tài
@@ -2974,3 +3011,4 @@ withdraw	(v)	rút, rút khỏi, rút lui
 within	(prep)	trong vong thời gian, trong khoảng thời gian
 without	(prep)	không, không có
 witness	(n) (v)	sự làm chứng, bằng chứng; chứng kiến, làm chứng
+>>>>>>> a497690d3417d81d1214f14d41bc8b3eb0d1deb5

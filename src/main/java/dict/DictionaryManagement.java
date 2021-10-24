@@ -5,8 +5,6 @@ import java.util.*;
 
 public class DictionaryManagement {
 
-        // private DictionaryManagement dictonaryManagement = new
-        // DictionaryManagement();
         private Scanner sc = new Scanner(System.in);
         private final String linkFile = "dictionary.txt";
 
@@ -25,16 +23,23 @@ public class DictionaryManagement {
                 new_word.setWordExplain(vn);
 
                 Dictionary.words.add(new_word);
+                // add
+                Collections.sort(Dictionary.words, new Comparator<Word>() {
+                        @Override
+                        public int compare(Word o1, Word o2) {
+                                return o1.getWordTarget().compareTo(o2.getWordTarget());
+                        }
+                });
         }
 
         // tìm kiếm từ
         public int dictionaryLookup(String word) {
-                for (int i = 0; i < Dictionary.words.size(); i++) {
-                        if(Dictionary.words.get(i).getWordTarget().equals(word)) {
-                                return i;
-                        }
+                int index = findWord(word);
+                if (index != -1 && word.equals(Dictionary.words.get(index).getWordTarget())) {
+                        return index;
                 }
                 return -1;
+
         }
 
         // thêm dữ liệu (thêm từ mới hoặc thêm nghĩa từ "chèn sau nghĩa cũ")
@@ -86,25 +91,42 @@ public class DictionaryManagement {
         }
 
         // tìm từ dựa trên những chữ cái đầu tiên
-        public void findWord(String word) {
-                System.out.println("tu can tim: ");
-                boolean check = true;
-                ArrayList<Integer> listResult = new ArrayList<Integer>();
-                for (int i=0; i<Dictionary.words.size(); i++){
-                        if (Dictionary.words.get(i).getWordTarget().length() >= word.length()) {
+        public int findWord(String word) {
+                int wordLength = word.length();
+                int size = Dictionary.words.size();
+                int mid = size / 2, left = 0, right = size - 1;
+                int value = 1;
+                char kt = (char) (word.charAt(0) - 1);
+                while (value != 0) {
+                        value = kt - Dictionary.words.get(mid).getWordTarget().charAt(0);
+                        if (value < 0) {
+                                right = mid;
+                                mid -= (mid - left) / 2;
+                        } else if (value > 0) {
+                                left = mid;
+                                mid += (right - mid) / 2;
+                        }
+                }
+                int i = mid;
+                //ArrayList<Integer> listResult = new ArrayList<Integer>();
+                kt = word.charAt(0);
+                while (i < size && Dictionary.words.get(i).getWordTarget().charAt(0) <= kt) {
+                        if (Dictionary.words.get(i).getWordTarget().length() >= wordLength) {
                                 if (word.equals(Dictionary.words.get(i).getWordTarget().substring(0, word.length()))) {
-                                        check = false;
-                                        listResult.add(i);
+                                        //listResult.add(i);
+                                        return i;
                                 }
                         }
+                        i++;
                 }
-                if (check) {
-                        System.out.println("khong co tu nao !!!");
-                } else {
-                        for(int index:listResult) {
-                                System.out.println(Dictionary.words.get(index).getWordTarget());
-                        }
-                }
+                // if (listResult.size() <= 0) {
+                //         System.out.println("khong co tu nao !!!");
+                // } else {
+                //         for (int index : listResult) {
+                //                 System.out.println(Dictionary.words.get(index).getWordTarget());
+                //         }
+                // }
+                return -1;
         }
 
         // xuất danh sách từ điển ra file dictionaries.txt
@@ -146,10 +168,7 @@ public class DictionaryManagement {
                                         break;
                                 }
                                 String txt[] = line.split("\t");
-                                String eng = txt[0];
-                                String vn = txt[1];
-                                Word Wordss = new Word(eng, vn);
-                                Dictionary.words.add(Wordss);
+                                Dictionary.words.add(new Word(txt[0], txt[1]));
                         }
                 } catch (IOException e) {
                         e.printStackTrace();

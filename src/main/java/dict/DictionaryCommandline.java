@@ -25,6 +25,7 @@ public class DictionaryCommandline {
     // menu thư viện
     public void dictionaryBasic() {
         String value;
+        dictManagement.insertFromFile();
         while (true) {
             System.out.println("\t1.nhập từ mới");
             System.out.println("\t2.danh sách các từ");
@@ -34,7 +35,6 @@ public class DictionaryCommandline {
             System.out.println("\t6.tìm từ tiếng anh");
             System.out.println("\t7.xuất danh sách ra file .txt");
             System.out.println("\t8.exit");
-            dictManagement.insertFromFile();
             System.out.print("nhập lựa chọn: ");
             value = sc.nextLine();
             if (value.equals("1")) {
@@ -87,11 +87,12 @@ public class DictionaryCommandline {
                 System.out.print("Nhap tu can tim: ");
                 String word = sc.nextLine();
                 int index = dictManagement.dictionaryLookup(word);
-                if (index>=0) {
-                    System.out.println(index + "    "+Dictionary.words.get(index).getWordTarget()+" "+Dictionary.words.get(index).getWordExplain());
-                    VoiceManager.voice(Dictionary.words.get(index).getWordTarget());
+                if (index < 0) {
+                    System.out.println("Khong tim thay tu can tim");
                 } else {
-                    System.out.println("Khong tim thay tu");
+                    System.out.println(index + "    " + Dictionary.words.get(index).getWordTarget() + "      "
+                            + Dictionary.words.get(index).getWordExplain());
+                    //VoiceManager.voice(Dictionary.words.get(index).getWordTarget());
                 }
             } else if(value.equals("5")){
                 System.out.print("Nhap tu can tim: ");
@@ -111,7 +112,12 @@ public class DictionaryCommandline {
     public void dictionarySearcher() {
         System.out.print("nhap tu: ");
         String word = sc.nextLine();
-        dictManagement.findWord(word);
+        int index = dictManagement.findWord(word);
+        if (index != -1) {
+        System.out.println(Dictionary.words.get(index).getWordTarget());
+        } else {
+            System.out.println("không tìm thấy từ gợi ý");
+        }
     }
 
 }
